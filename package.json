@@ -1,0 +1,22 @@
+{
+  "name": "karimgamin2000-beep",
+  "version": "1.0.0",
+  "description": "Generative AI & Automation Engineer. Intelligent workflows, prompt engineering, and autonomous AI assistant agents.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karimgamin2000-beep/karimgamin2000-beep.git"
+  },
+  "author": "Abdoul Karim Konate <karimgamin2000@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karimgamin2000-beep/karimgamin2000-beep/issues"
+  },
+  "homepage": "https://github.com/karimgamin2000-beep/karimgamin2000-beep#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0"
+  }
+}
