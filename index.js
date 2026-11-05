@@ -10,7 +10,7 @@ function generateNewREADME() {
 
   function updateIdentifier(identifier, replaceText) {
     const identifierIndex = findIdentifierIndex(readmeRow, identifier);
-    if (!readmeRow[identifierIndex]) return;
+    if (identifierIndex === -1 || !readmeRow[identifierIndex]) return;
     readmeRow[identifierIndex] = readmeRow[identifierIndex].replace(
       `<#${identifier}>`,
       replaceText
@@ -51,12 +51,12 @@ function getTodayDate() {
 
 function getDBNWSentence() {
   const nextYear = today.getFullYear() + 1;
-  const nextYearDate = new Date(String(nextYear));
+  const newYearDate = new Date(nextYear, 0, 1);
+  const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
-  const timeUntilNewYear = nextYearDate.getTime() - today.getTime();
-  const dayUntilNewYear = Math.round(timeUntilNewYear / msInOneDay);
+  const dayUntilNewYear = Math.round((newYearDate.getTime() - todayMidnight.getTime()) / msInOneDay);
 
-  return `**${dayUntilNewYear} day before ${nextYear} ⏱**`;
+  return `**${dayUntilNewYear} day${dayUntilNewYear > 1 ? 's' : ''} before ${nextYear} ⏱** days before new years`;
 }
 
 const findIdentifierIndex = (rows, identifier) =>
@@ -64,9 +64,9 @@ const findIdentifierIndex = (rows, identifier) =>
 
 const updateREADMEFile = (text) => fs.writeFile('./README.md', text);
 
-function main() {
+async function main() {
   const newREADME = generateNewREADME();
   console.log(newREADME);
-  updateREADMEFile(newREADME);
+  await updateREADMEFile(newREADME);
 }
 main();

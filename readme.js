@@ -14,7 +14,7 @@ Added the \`Thu 5 Nov 2026\`
 
 Last update on <#today_date>
 
-<#day_before_new_years> days before new years
+<#day_before_new_years>
 
 <#karimbot_signing>
 `;

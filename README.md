@@ -14,6 +14,6 @@ Added the `Thu 5 Nov 2026`
 
 Last update on Thu Nov 05 2026
 
-**56 day before 2027 ⏱** days before new years
+**57 days before 2027 ⏱** days before new years
 
 🤖 This README.md is updated with cruelty, by KarimBot ❤️
