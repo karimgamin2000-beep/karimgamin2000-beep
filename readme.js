@@ -1,4 +1,6 @@
-module.exports = `### Hi there 👋
+module.exports = `![KARIMGAMIN2000 BEEP](./assets/karimgamin2000-beep-banner.png)
+
+### Hi there 👋
 
 I am a **Generative AI & Automation Engineer** passionate about building intelligent workflows, advanced prompt engineering, and autonomous AI assistant agents.
 
